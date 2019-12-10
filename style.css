@@ -1,0 +1,55 @@
+body{
+  font-family:Ubuntu;
+  background: linear-gradient(45deg,#ccffe5,#bfffdf,#99ffcc,#73ffb9,#40ff9f);
+  
+  
+}
+h1{
+  text-align:center;
+  margin-top:3%;
+}
+#main{
+  border:1px solid black;
+  padding:5%;
+  margin-left:5%;
+   margin-right:5%;
+  margin-top:5%;
+  border-radius:5%;
+  background: linear-gradient(45deg,#fbfbfb,#f4f4f4,#ebebeb,#ededed,#e5e5e5);
+  
+}
+#survey-form{
+  width:100%;
+  display:flex;
+  flex-flow:column;
+}
+.rowtab{
+  max-width:100%;
+  display:grid;
+  grid-template-columns:50% 50%;
+}
+.rightfield{
+  
+  
+  margin:5%;
+}
+.labels{
+  margin:5%;
+  text-align:right;
+}
+.radio{
+  margin:5%;
+  
+}
+.checkbox{
+  margin:5%;
+}
+.radio-ul{
+  margin-left:-22%;
+}
+.input-field{
+  max-width:100%;
+}
+#description{
+  top:0;
+}

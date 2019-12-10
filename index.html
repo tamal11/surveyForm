@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- partial:index.partial.html -->
+  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+  <h1 id="title">Survey Form</h1>
+
+  <main id="main">
+    <p id="description">Let us know how we can improve our jumjournal site</p>
+
+    <form id="survey-form">
+      <div class="rowtab">
+        <div class="labels">
+          <label id="name-label" for="name">* Name</label>
+        </div>
+        <div class="rightfield">
+          <input id="name" type="text" name="name" class="input-field" placeholder="Enter your name" required> </input>
+        </div>
+      </div>
+
+      <div class="rowtab">
+        <div class="labels">
+          <label id="email-label" for="email">* Email</label>
+        </div>
+        <div class="rightfield">
+          <input id="email" type="email" name="email" class="input-field" placeholder="Enter your email"
+            required></input>
+        </div>
+      </div>
+
+      <div class="rowtab agerow">
+        <div class="labels agelevel">
+          <label id="number-label" for="age">* Age</label>
+        </div>
+        <div class="rightfield agefield">
+          <input id="number" type="number" name="age" min="6" max="100" class="input-field" placeholder="Age" required>
+          </input>
+        </div>
+      </div>
+
+      <div class="rowtab">
+        <div class="labels">
+          <label for="ocupation">Which option best describes your current role?</label>
+        </div>
+        <div class="rightfield">
+          <select id="dropdown" name="ocupation" class="dropdown">
+            <option disabled value>Select an option</option>
+            <option value="student">Student</option>
+            <option value="employee">Employee</option>
+            <option value="artist">Artist</option>
+            <option value="artist">Prepare not to say</option>
+            <option value="artist">Others</option>
+
+
+          </select>
+        </div>
+      </div>
+
+      <div class="rowtab">
+        <div class="labels">
+          <label for="userrating">How likely is that you would recommend jumjournal to a friend?</label>
+        </div>
+        <div class="rightfield">
+          <ul style="list-style:none" class="radio-ul">
+            <li class="radio">
+              <label><input name="radio-buttons" class="userrating" value="1" type="radio"></input>Definitely</label>
+            </li>
+            <li class="radio">
+              <label><input name="radio-buttons" class="userrating" value="2" type="radio"></input>May be</label></li>
+            <li class="radio"><label><input name="radio-buttons" class="userrating" value="3" type="radio"></input>Not
+                sure</label></li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="rowtab">
+        <div class="labels">
+          <label for="most-like">What do you like most in jumjournal:</label>
+        </div>
+        <div class="rightfield">
+          <select id="mostLike" name="most-like" class="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="History">History Section</option>
+            <option value="Culyure">Culture Section</option>
+            <option value="Politices">Politics Section</option>
+            <option value="Photo">Photo Gallary Section</option>
+            <option value="Video">Video Gallary Section</option>
+            <option value="Literature">Literature Section</option>
+            <option value="Education">Education Section</option>
+            <option value="Personality">Personality Section</option>
+
+
+          </select>
+        </div>
+      </div>
+
+      <div class="rowtab">
+        <div class="labels">
+          <label for="preferances">Things that should be improved in the future
+            (Check all that apply):</label>
+        </div>
+        <div class="rightfield">
+          <ul id="preferances" style="list-style:none">
+            <li class="checkbox">
+              <label><input name="prefer" class="userrating" value="1" type="checkbox"></input>Culture Section</label>
+            </li>
+            <li class="checkbox">
+              <label><input name="prefer" class="userrating" value="2" type="checkbox"></input>Politices Section</label>
+            </li>
+            <li class="checkbox"><label><input name="prefer" class="userrating" value="3"
+                  type="checkbox"></input>Education section</label></li>
+            <li class="checkbox"><label><input name="prefer" class="userrating" value="3"
+                  type="checkbox"></input>Literature Section</label></li>
+
+          </ul>
+        </div>
+
+      </div>
+      <div class="rowtab">
+        <div class="labels">
+          <label for="comments">Any Comments or Suggestions?</label>
+        </div>
+        <div class="rightfield">
+          <textarea id="comments" class="input-field" placeholder="Enter your comment here" name="coment"></textarea>
+        </div>
+      </div>
+      <button id="submit" type="submit">subbmit</button>
+
+    </form>
+
+
+
+
+
+  </main>
+  <!-- partial -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
